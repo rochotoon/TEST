@@ -1,6 +1,5 @@
 # Kenzan - SpringBoot project
 
-************************************** Basic Info ************************************************
 
 * Employee proyect.- This is an small project to handle employees information.
 
@@ -14,14 +13,14 @@ Run project - There are 3 ways to run this project:
                       3) within the kenzan folder run mvn clean install , then after folder target is generated just  go there
                           look for a file called : interview-0.0.1-SNAPSHOT.war  and within a terminar execute : java -jar interview-0.0.1-SNAPSHOT.war
                           
-***************************************** Access ***************************************************
+# Access 
 
 Access URL :  http://localhost:8080/kenzan
 
 Access UI    :  http://localhost:8080/kenzan/swagger-ui.html
 
 
-**************************************** Execution *************************************************
+# Execution 
 
 Within this project you are going to be able to execute operations like:
 
@@ -43,10 +42,7 @@ Within this project you are going to be able to execute operations like:
                         
                         e) Delete employees . NOTE: Authentication definition at application.properties.
                      
-                     - Ex: DELETE  curl -X DELETE "http://localhost:8080/kenzan/employee" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"employeeId\": 5, \"firstName\": \"string\", \"lastName\": \"string\", \"middleInitial\": \"string\", \"status\": \"ACTIVE\"}"
-           
-************************************** Technical info ****************************************
-                     
+                     - Ex: DELETE  curl -X DELETE "http://localhost:8080/kenzan/employee" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"employeeId\": 5, \"firstName\": \"string\", \"lastName\": \"string\", \"middleInitial\": \"string\", \"status\": \"ACTIVE\"}"                     
 
 # Technologies
 - Java 1.8
