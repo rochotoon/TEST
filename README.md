@@ -46,12 +46,14 @@ Within this project you are going to be able to execute operations like:
 
 # Technologies
 - Java 1.8
+- Spring core
 - Spring Boot
 - Spring data
 - Spring security
 - Spring Test
 - Spring Rest
 - Lombok
+- swagger
 
 # Design patterns
 - Singleton                    : To avoid unesesary instances.
