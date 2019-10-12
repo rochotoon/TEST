@@ -1,4 +1,4 @@
-# SpringBoot
+# Kenzan - SpringBoot project
 
 ************************************** Basic Info ************************************************
 
@@ -48,7 +48,7 @@ Within this project you are going to be able to execute operations like:
 ************************************** Technical info ****************************************
                      
 
-* Technologies
+# Technologies
 - Java 1.8
 - Spring Boot
 - Spring data
@@ -57,7 +57,7 @@ Within this project you are going to be able to execute operations like:
 - Spring Rest
 - Lombok
 
-* Design patterns
+# Design patterns
 - Singleton
 - Builder
 - Domain driven design
