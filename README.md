@@ -15,9 +15,11 @@ Run project - There are 3 ways to run this project:
                           
 # Access 
 
-Access URL :  http://localhost:8080/kenzan
+Access URL        :  http://localhost:8080/kenzan
 
-Access UI    :  http://localhost:8080/kenzan/swagger-ui.html
+Access UI         :  http://localhost:8080/kenzan/swagger-ui.html
+
+Access runtime DB : http://localhost:8080/kenzan/h2
 
 # UI
 You can use the swagger UI to test this app.
