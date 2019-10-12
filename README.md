@@ -8,7 +8,7 @@ Run project - There are 3 ways to run this project:
 
                       1) within the kenzan folder  run mvn spring-boot:run 
                       
-                      2) within an IDE , look for  kenzanApplication.java class and run it.
+                      2) within an IDE , look for  kenzanApplication.java class and run it as "java application console".
                       
                       3) within the kenzan folder run mvn clean install , then after folder target is generated just  go there
                           look for a file called : interview-0.0.1-SNAPSHOT.war  and within a terminar execute : java -jar interview-0.0.1-SNAPSHOT.war
@@ -54,11 +54,11 @@ Within this project you are going to be able to execute operations like:
 - Lombok
 
 # Design patterns
-- Singleton
-- Builder
-- Domain driven design
-- Adapter/Marshallers
-- FunctionalInterfaces/lambdas
+- Singleton                    : To avoid unesesary instances.
+- Builder                      : use of immutable instances and encapsulate logic.   
+- Domain driven design         : Business logic should reside within their corresponding model representation.
+- Adapter/Marshallers          : Translators to move information thru applications layers as corresponding.
+- FunctionalInterfaces/lambdas : decreate the use of boiler plate code and improve code readiability .
 
 
 
