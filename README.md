@@ -21,9 +21,11 @@ Access UI    :  http://localhost:8080/kenzan/swagger-ui.html
 
 Within this project you are going to be able to execute operations like:
 
-  a) Get employees by an ID     - Ex: GET     http://localhost:8080/kenzan/employee/{id}                        
-  b) Get all employees          - Ex: GET     http://localhost:8080/kenzan/employee/all
-  c) Create new employees  
+                        a) Get employees by an ID     - Ex: GET     http://localhost:8080/kenzan/employee/{id}   
+                        
+                        b) Get all employees          - Ex: GET     http://localhost:8080/kenzan/employee/all
+                        
+                        c) Create new employees  
                         
                         
                         - Ex: POST  curl -X POST "http://localhost:8080/kenzan/employee" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"dateOfBirth\": \"2001-01-01\", \"dateOfEmployment\": \"2019-10-12T16:38:20.612Z\", \"employeeId\": 0, \"firstName\": \"string\", \"lastName\": \"string\", \"middleInitial\": \"string\", \"status\": \"ACTIVE\"}"
