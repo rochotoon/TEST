@@ -60,7 +60,7 @@ Within this project you are going to be able to execute operations like:
 - Builder                      : use of immutable instances and encapsulate logic.   
 - Domain driven design         : Business logic should reside within their corresponding model representation.
 - Adapter/Marshallers          : Translators to move information thru applications layers as corresponding.
-- FunctionalInterfaces/lambdas : decreate the use of boiler plate code and improve code readiability .
+- FunctionalInterfaces/lambdas : decrease the use of boiler plate code and improve code readiability .
 
 
 
