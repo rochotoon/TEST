@@ -19,6 +19,10 @@ Access URL :  http://localhost:8080/kenzan
 
 Access UI    :  http://localhost:8080/kenzan/swagger-ui.html
 
+# UI
+You can use the swagger UI to test this app.
+![image](https://user-images.githubusercontent.com/24998574/66705176-4e2a5900-ecd8-11e9-89dc-3167af9f4e51.png)
+
 
 # Execution 
 
