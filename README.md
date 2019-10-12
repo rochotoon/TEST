@@ -6,8 +6,11 @@
 
 
 Run project - There are 3 ways to run this project:
+
                       1) within the kenzan folder  run mvn spring-boot:run 
+                      
                       2) within an IDE , look for  kenzanApplication.java class and run it.
+                      
                       3) within the kenzan folder run mvn clean install , then after folder target is generated just  go there
                           look for a file called : interview-0.0.1-SNAPSHOT.war  and within a terminar execute : java -jar interview-0.0.1-SNAPSHOT.war
                           
@@ -46,20 +49,22 @@ Within this project you are going to be able to execute operations like:
                      
 
 * Technologies
--- Java 1.8
--- Spring Boot
--- Spring data
--- Spring security
--- Spring Test
--- Spring Rest
--- Lombok
+- Java 1.8
+- Spring Boot
+- Spring data
+- Spring security
+- Spring Test
+- Spring Rest
+- Lombok
 
 * Design patterns
--- Singleton
--- Builder
--- Domain driven design
--- Adapter/Marshallers
--- FunctionalInterfaces/lambdas
+- Singleton
+- Builder
+- Domain driven design
+- Adapter/Marshallers
+- FunctionalInterfaces/lambdas
+
+
 
 
 
