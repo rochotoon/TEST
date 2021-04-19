@@ -123,7 +123,8 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId> 
 				<artifactId>maven-dependency-plugin</artifactId>
-                    <executions>0<execution><phase>package</phase> 
+                    <executions>0<executions>
+					<phase>package</phase> 
 					<goals><goal>copy</goal></goals>
 					<configuration>
 						<artifactItems>
