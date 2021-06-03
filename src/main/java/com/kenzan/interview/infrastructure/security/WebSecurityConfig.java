@@ -7,6 +7,8 @@
  */
 package com.kenzan.interview.infrastructure.security;
 
+import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -20,8 +22,13 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.AuthenticationEntryPoint;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import lombok.extern.slf4j.Slf4j;
-
+import java.util.Collections;
+import org.springframework.web.filter.CorsFilter;
+import org.springframework.core.Ordered;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.cors.CorsConfiguration;
 /**
  * Adapter class that implements the interface: ServiceResponse
  *
@@ -70,6 +77,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // Use AuthenticationEntryPoint to authenticate user/password
         http.httpBasic().authenticationEntryPoint(authEntryPoint);
     }
+
+    @Bean
+    public FilterRegistrationBean simpleCorsFilter() {  
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();  
+        CorsConfiguration config = new CorsConfiguration();  
+        config.setAllowCredentials(true); 
+        // *** URL below needs to match the Vue client URL and port ***
+        config.setAllowedOrigins(Collections.singletonList("https://microservices921.herokuapp.com")); 
+        config.setAllowedMethods(Collections.singletonList("*"));  
+        config.setAllowedHeaders(Collections.singletonList("*"));  
+        source.registerCorsConfiguration("/**", config);  
+        FilterRegistrationBean bean = new FilterRegistrationBean<>(new CorsFilter(source));
+        bean.setOrder(Ordered.HIGHEST_PRECEDENCE);  
+        return bean;  
+    }  
 
     /**
      * <p>
